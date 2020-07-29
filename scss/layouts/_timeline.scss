@@ -1,40 +1,37 @@
-.timeline{
+.timeline {
 
   background-color: $color-gray-1;
   padding: 10rem 0;
 
-  &__container{
+  .container {
     @include setWidth;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 5rem;
   }
 
-  &_box{
+  &_box {
 
-  &--head{
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.5rem;
+    &--head {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    &--icon {
+      width: 2rem;
+      height: 2rem;
+      fill: $color-primary-main;
+      margin-right: 1rem;
+    }
+
+    &--heading {
+      display: inline-block;
+    }
+
+    &--text {
+      line-height: 1.9em;
+      margin-left: 3rem;
+    }
   }
-  
-  &--icon{
-    width: 2rem;
-    height: 2rem;
-    fill: $color-primary-main;
-    margin-right: 1rem;
-  }
-
-  &--heading{
-    display: inline-block;
-  }
-
-  &--text{
-    line-height: 1em;
-  }
-
-
-}
-
-
 }
