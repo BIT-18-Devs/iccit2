@@ -1,0 +1,25 @@
+.features {
+  background-color: $color-primary-main;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min-content, 23%));
+    grid-gap: 2%;
+  }
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $color-white;
+
+  &__icon {
+    fill: currentColor;
+    height: 6rem;
+    width: 6rem;
+    margin-bottom: 3rem;
+  }
+}
