@@ -1,0 +1,22 @@
+.about{
+
+  &__container{
+    @include setWidth;
+  }
+
+  &__event{
+    margin-bottom: 5rem;
+  }
+
+  &__aubit{
+      width: 48%;
+      display: inline-block;
+      margin-right: 2%;
+  }
+
+  &__department{
+      width: 48%;
+      display: inline-block;
+  }
+
+}
