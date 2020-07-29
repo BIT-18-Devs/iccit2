@@ -26,7 +26,7 @@
 
     &-logo {
       width: 100%;
-      object-fit: contain;      
+      object-fit: contain;
     }
   }
 
@@ -35,19 +35,18 @@
     list-style: none;
     color: $color-white;
 
-    @include respond(tab){
-        top: 7.5rem;
-        left: 0;
-        background-color: transparent;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        opacity: 0;
-        transform: translateY(-150%);
-        padding: 1rem 2.5rem;
-        transition: all 0.3s;
-      }
-
+    @include respond(tab) {
+      top: 7.5rem;
+      left: 0;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      opacity: 0;
+      transform: translateY(-150%);
+      padding: 1rem 2.5rem;
+      transition: all 0.3s;
+    }
   }
 
   &__item {
@@ -72,16 +71,14 @@
     }
   }
 
-
-  &__end{
+  &__end {
     display: flex;
     align-items: center;
   }
 
-  &__cta{
+  &__cta {
     margin-right: 2rem;
   }
-
 
   &-active {
     opacity: 1;
