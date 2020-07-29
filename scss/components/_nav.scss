@@ -26,7 +26,7 @@
 
     &-logo {
       width: 100%;
-      object-fit: contain;
+      object-fit: contain;      
     }
   }
 
@@ -34,6 +34,20 @@
     flex: 1;
     list-style: none;
     color: $color-white;
+
+    @include respond(tab){
+        top: 7.5rem;
+        left: 0;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        opacity: 0;
+        transform: translateY(-150%);
+        padding: 1rem 2.5rem;
+        transition: all 0.3s;
+      }
+
   }
 
   &__item {
@@ -58,10 +72,84 @@
     }
   }
 
-  &__cta {
+
+  &__end{
+    display: flex;
+    align-items: center;
+  }
+
+  &__cta{
+    margin-right: 2rem;
+  }
+
+
+  &-active {
+    opacity: 1;
+    transform: translateY(0%);
+    width: 100%;
+  }
+
+  &-active2 {
+    opacity: 1;
+    transform: translateY(0%);
+    background-color: $color-primary-main;
+    width: 100%;
+  }
+}
+
+
+//Hamburger
+.burger {
+  display: none;
+  cursor: pointer;
+
+  @include respond(tab) {
+    display: block;
+    transform: rotate(180deg);
+  }
+
+  .burger__line {
+    position: relative;
+    transform: translateY(1rem);
+    width: 3rem;
 
     &,
-    &:link,
-    &:visited {}
+    &::before,
+    &::after {
+      height: 2px;
+      background-color: $color-white;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      width: 3rem;
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+
+    &::before {
+      top: -0.8rem;
+    }
+
+    &::after {
+      top: 0.9rem;
+    }
+
+    &--toggle {
+      background-color: transparent !important;
+
+      &::before {
+        top: 0;
+        transform: rotate(135deg);
+      }
+
+      &::after {
+        top: 0;
+        transform: rotate(-135deg);
+      }
+    }
   }
 }
