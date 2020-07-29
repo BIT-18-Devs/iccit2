@@ -29,7 +29,8 @@ body {
 }
 
 ::selection {
-  background-color: $color-secondary-dark;
+  background-color: $color-primary-main;
   color: $color-white;
+  fill: $color-white;
   display: inline-block;
 }
