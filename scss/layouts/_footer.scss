@@ -1,8 +1,41 @@
 .footer {
 
+  &__map{
+    width: 70%;
+
+    @include respond(tiny){
+      width: 100%;
+    }
+  }
+
+  &__location{
+    font-size: 1.5rem;
+    width: 25%;
+    h2{
+      color :$color-primary-main;
+    }
+
+    @include respond(tiny){
+      width: 100%;
+    }
+  }
+
+
   &-top {
     background-color: $color-gray-3;
     padding: 3rem 0;
+
+    .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include respond(tiny){
+        flex-direction: column;
+      }
+
+    }
+
   }
 
   &-middle {
