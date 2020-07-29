@@ -33,7 +33,12 @@ body {
 }
 
 .heading-primary {
+  font-family: $font-primary;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
   color: $color-primary-main;
+  padding-bottom: 1rem;
   margin-bottom: 1rem;
   position: relative;
 
@@ -46,17 +51,43 @@ body {
     width: 4rem;
     height: 3px;
     border-radius: 2px;
-    background-color: $color-primary-main;
+    background-color: currentColor;
   }
 }
 
 .heading-secondary {
-  font-size: 3.4rem;
-  font-weight: 300;
-  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  font-family: $font-primary;
+  color: $color-primary-main;
+}
+
+.heading-tertiary {
+  font-family: $font-secondary;
+  font-weight: 600;
+  font-size: inherit;
+  text-transform: uppercase;
 }
 
 .description {
   font-size: 1.8rem;
   line-height: 1.6em;
+}
+
+span.emphasize {
+  & {
+    position: relative;
+    padding-bottom: .4rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    background-color: currentColor;
+  }
 }

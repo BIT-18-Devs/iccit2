@@ -1,11 +1,17 @@
 .btn {
 
+  background-color: $color-gray-5;
+  color: $color-white;
+
   &,
   &:link,
   &:visited {
+    font-family: $font-primary;
+    text-decoration: none;
+    display: inline-block;
     border: none;
     border-radius: 3px;
-    background-color: $color-gray-5;
+    padding: 1rem 2rem;
   }
 
   &-primary {
