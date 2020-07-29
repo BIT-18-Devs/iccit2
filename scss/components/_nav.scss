@@ -1,10 +1,22 @@
 .nav {
-  @include setWidth;
-  padding: 1.5rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.5rem;
+
+  &-sticky {
+    background-color: $color-primary-main;
+
+    .nav__item:hover {
+      color: currentColor;
+      background-color: $color-primary-light;
+    }
+  }
+
+  &__container {
+    @include setWidth;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+  }
 
   &__brand {
     margin-right: 1rem;
@@ -26,10 +38,8 @@
   &__item {
     display: inline-block;
     transition: color .1s;
-
-    &:not(:last-child) {
-      margin-right: 1rem;
-    }
+    padding: .5rem 1rem;
+    border-radius: 2px;
 
     &:hover {
       color: $color-primary-main;
