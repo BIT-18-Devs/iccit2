@@ -1,0 +1,10 @@
+.timeline{
+
+  &__container{
+    @include setWidth;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 2rem;
+  }
+
+
+}
