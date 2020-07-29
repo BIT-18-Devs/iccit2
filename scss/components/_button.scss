@@ -1,0 +1,14 @@
+.btn {
+
+  &,
+  &:link,
+  &:visited {
+    border: none;
+    border-radius: 3px;
+    background-color: $color-gray-5;
+  }
+
+  &-primary {
+    background-color: $color-primary-main;
+  }
+}
