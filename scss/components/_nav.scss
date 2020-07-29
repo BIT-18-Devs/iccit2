@@ -1,6 +1,6 @@
 .nav {
   @include setWidth;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,6 +20,7 @@
   &__items {
     flex: 1;
     list-style: none;
+    color: $color-white;
   }
 
   &__item {
