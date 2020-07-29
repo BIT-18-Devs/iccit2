@@ -1,0 +1,39 @@
+.callforpapers {
+  @include setWidth;
+
+  .details {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, minmax(8rem, 16rem));
+    grid-auto-rows: minmax(8rem, 16rem);
+    grid-row-gap: 3rem;
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+
+      &:nth-child(even) {
+        .details__image {
+          order: -1;
+          margin-left: 0;
+          margin-right: 3rem;
+        }
+      }
+    }
+
+    &__description {
+      align-self: center;
+    }
+
+    &__image {
+      width: 16rem;
+      border-radius: 3px;
+      object-fit: cover;
+
+      &:last-child {
+        margin-left: 3rem;
+      }
+    }
+  }
+}
