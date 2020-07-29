@@ -1,0 +1,12 @@
+.speaker{
+  background-color: orangered;
+  display: grid;
+
+  grid-template-columns: repeat(4,1fr);
+
+
+  &__img{
+    height: 20rem;
+  }
+
+}
