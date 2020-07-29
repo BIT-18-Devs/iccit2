@@ -1,0 +1,38 @@
+.footer {
+
+  &-top {
+    background-color: $color-gray-3;
+    padding: 3rem 0;
+  }
+
+  &-middle {
+    background-color: $color-gray-7;
+    color: $color-white;
+    padding: 3rem 0;
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+
+    .contact {
+      display: flex;
+      align-items: center;
+
+      &__icon {
+        height: 2em;
+        width: 2em;
+        margin-right: 1em;
+        fill: currentColor;
+      }
+    }
+  }
+
+  &-bottom {
+    background-color: $color-gray-8;
+    color: $color-white;
+    padding: 3rem;
+    text-align: center;
+  }
+}
