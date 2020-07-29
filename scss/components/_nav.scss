@@ -57,6 +57,11 @@
 
     &:hover {
       color: $color-primary-main;
+    
+      @include respond(tab){
+        color: $color-black;
+      }
+
     }
   }
 
