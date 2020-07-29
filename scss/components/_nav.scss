@@ -83,12 +83,6 @@
   &-active {
     opacity: 1;
     transform: translateY(0%);
-    width: 100%;
-  }
-
-  &-active2 {
-    opacity: 1;
-    transform: translateY(0%);
     background-color: $color-primary-main;
     width: 100%;
   }
@@ -149,4 +143,8 @@
       }
     }
   }
+}
+
+.nav-clr{
+  background-color: $color-primary-main;
 }
