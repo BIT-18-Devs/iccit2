@@ -1,0 +1,34 @@
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(rgba($color-black, 0.2), rgba($color-black, 0.2)), url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+
+  &__main {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    width: 100%;
+
+    &-inner {
+      text-align: right;
+      color: $color-white;
+      @include setWidth;
+    }
+  }
+
+  .title {
+    font-size: 5rem;
+    font-weight: 400;
+  }
+
+  .title-secondary {
+    width: 50%;
+    margin-left: auto;
+    font-weight: 300;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+}

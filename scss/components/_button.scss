@@ -15,18 +15,26 @@
     transition: all .2s;
   }
 
-  &:focus,
-  &:active {
+  &:hover {
+    background-color: lighten($color-gray-4, 1%);
+  }
+
+  &:focus {
     outline: none;
+  }
+
+  &:active {
     background-color: darken($color-gray-5, 10%);
   }
 
   &-primary {
     background-color: $color-primary-main;
 
-    &:focus,
+    &:hover {
+      background-color: $color-primary-light;
+    }
+
     &:active {
-      outline: none;
       background-color: $color-primary-dark;
     }
   }

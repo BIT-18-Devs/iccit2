@@ -7,6 +7,12 @@
   }
 }
 
+@mixin fullSizeImage {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 /*
   DARK THEME / LIGHT THEME styling
   $scheme = dark | light
