@@ -12,9 +12,22 @@
     border: none;
     border-radius: 3px;
     padding: 1rem 2rem;
+    transition: all .2s;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    background-color: darken($color-gray-5, 10%);
   }
 
   &-primary {
     background-color: $color-primary-main;
+
+    &:focus,
+    &:active {
+      outline: none;
+      background-color: $color-primary-dark;
+    }
   }
 }
