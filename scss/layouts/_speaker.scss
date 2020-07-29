@@ -1,16 +1,35 @@
 .speaker{
-  background-color: orangered;
+  background-color: #F1f1f1;
+  padding: 10rem 0;
   
 
 
   &__container{
+    @include setWidth;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 1.5rem;
+
+    @include respond(phone){
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 2rem;
+    }
+
   }
 
 
   &__img{
-    height: 20rem;
+    height: 18rem;
+    width: 100%;
+    object-fit: cover;
   }
 
+  &__details{
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  &__clg{
+    font-size: 1.5rem;
+  }
 }
