@@ -1,0 +1,32 @@
+.timeline{
+
+  &__container{
+    @include setWidth;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2.5rem;
+  }
+
+  &_box{
+
+  &--head{
+    display: flex;
+    align-items: center;
+  }
+  
+  &--icon{
+    width: 2rem;
+    height: 2rem;
+    fill: $color-primary-main;
+    margin-right: 1rem;
+  }
+
+  &--heading{
+    display: inline-block;
+  }
+
+
+}
+
+
+}

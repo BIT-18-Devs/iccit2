@@ -1,5 +1,5 @@
 .speaker{
-  background-color: #F1f1f1;
+  background-color: $color-gray-1;
   padding: 10rem 0;
   
 
@@ -25,7 +25,7 @@
     object-position: top;
 
     &--mod{
-      object-position: top;
+      object-position: center;
     }
 
   }
