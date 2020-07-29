@@ -416,9 +416,46 @@ span.emphasize::after {
   margin-bottom: 3rem;
 }
 
+.footer__map {
+  width: 70%;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .footer__map {
+    width: 100%;
+  }
+}
+
+.footer__location {
+  font-size: 1.5rem;
+  width: 25%;
+}
+
+.footer__location h2 {
+  color: #117EE2;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .footer__location {
+    width: 100%;
+  }
+}
+
 .footer-top {
   background-color: #eee;
   padding: 3rem 0;
+}
+
+.footer-top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .footer-top .container {
+    flex-direction: column;
+  }
 }
 
 .footer-middle {
